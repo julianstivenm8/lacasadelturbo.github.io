@@ -1,0 +1,792 @@
+
+
+body{
+	background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/halftone.png);
+
+}
+*{
+
+}
+
+header{
+
+	background-color: #383B3D;
+	height:136px;
+	border-bottom: 1em solid  #CA6233; 
+}
+nav{
+
+	width: 984px;
+	margin: 0 auto;
+}
+header > nav >div>div{
+	position: absolute;
+	width:925px;
+
+	padding:0;
+	margin:0;	
+}
+
+header > nav >div>div>ul{
+	width:0px; 
+	margin-right:-10px;
+	position: absolute;
+	margin-top: 3.5em;
+
+	margin-left: 31.5em;
+}
+
+header > nav >div>div> ul > li:last-child{
+	margin-right: 0em;
+}
+
+header > nav >div>div> ul > li  {
+	list-style: none;
+	position: relative;
+	margin-right: 2em;
+
+	font-family:bebas-neue;
+	font-size: 1.6em;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+
+}
+header > nav >div>div> ul > li >a:first-child{
+	margin-left: 0em;
+}
+
+
+header > nav >div>div> ul > li >a{
+	color: white;
+	padding-right: 0em;
+	transition:1s all ease;
+
+}
+
+#home #nav ul li a.uno, #productos #nav ul li a.dos,
+#servicios #nav ul li a.tres,#contacto #nav ul li a.cuatro,
+#nosotros #nav ul li a.cinco{
+	color:#CA6233;
+}
+
+
+header > nav >div>div> ul > li >a:hover{
+
+	color: white;
+	text-decoration: none;
+	color:#CA6233;
+	transition:1s all ease;
+
+	}
+
+
+	header > nav >div>div> ul > li >a:active{
+		color: white;
+		text-decoration: none;
+		color:#CA6233;
+	}
+	#navegacion{
+		margin-right: 0px;
+
+
+	}
+
+
+	#logo{
+		position: relative;
+		margin-top: 1.2em;
+		padding-left: 0em;
+	}
+	.row{
+
+		margin: 0 auto;
+	}
+	body > div{
+		width: 984px;
+		height: 350px;
+		margin: 0 auto;
+	}
+
+	.caption{
+		font-size:1.5em; 
+		font-family: 'Roboto',Sans-serif;
+		font-weight: bold;
+		margin-top: 10em;
+	}
+
+	.slider{
+		width:100%;
+
+		position:absolute; 
+		padding-bottom: 2em;
+		margin-top: 0em;
+
+
+
+	}
+	div>div>img{
+		width:100%;
+		width:100%;
+	}
+	#descripcion {
+		position:relative;
+		margin-top:461px; 
+		width: 100%;
+		height: 334px;
+		background-color: #383B3D;
+	}
+	#diagnostico {
+		position:relative;
+		margin-top:0px; 
+		width: 100%;
+		height: 419px;
+		background-color: #383B3D;
+	}
+		#adaptacion {
+		position:relative;
+		margin-top:0px; 
+		width: 100%;
+		height: 412px;
+		background-color: #383B3D;
+	}
+	#reparacion {
+		position:relative;
+		margin-top:0px; 
+		width: 100%;
+		height: 386px;
+	}
+	#cita {
+		position:relative;
+		margin-top:0px; 
+		width: 100%;
+		height: 167px;
+	}
+	#info{
+
+		width: 984px;
+		margin: 0 auto;
+		margin-top:1em; 
+		color:white;
+
+	}
+	#infoNegro{
+
+		width: 984px;
+		margin: 0 auto;
+		margin-top:1em; 
+		color:black;
+
+	}
+	#servicios{
+
+
+		height: 0px;
+		margin: 0 auto;
+		color:white;
+
+	}
+
+	#caida{
+		margin-top:4.6em;
+	}
+	#caidaNegro{
+		color:black;
+		margin-top:3.7em;
+	}
+
+	section>article>div>div{
+		position: absolute;
+		font-family:'Roboto',Sans-serif;
+		font-weight:400; 
+		margin-top:2em; 
+		text-align: justify;
+		height:11.2em;
+
+	}
+
+	h1{
+		position: absolute;
+		margin-top: 50px;
+		margin-bottom: 0em;
+		color: white;
+		font-family: bebas-neue;
+		font-size: 2.4em;
+	}
+	h3{
+		position: absolute;
+		margin-top: 225px;
+		margin-bottom: 0em;
+		color: white;
+		font-family: bebas-neue;
+		font-size: 2.4em;
+	}
+	h2{
+		position: absolute;
+		margin-top: 190px;
+		margin-bottom: 0em;
+		color: white;
+		font-family: bebas-neue;
+		font-size: 2.4em;
+	}
+	.texto{
+		position: absolute;
+		margin-left:-1em; 
+		margin-right:1em; 
+
+		margin-top: 76px;
+	}
+	.textoservi{
+		position: absolute;
+		margin-left:-1em; 
+		margin-right:1em; 
+
+		margin-top: 165px;
+	}
+	#textBut{
+		width: 140px;
+		height: 40px;
+		margin-bottom: 1em;
+		color:#CA6233;
+		transition: all 1s ease;
+	}
+	#textBut:hover{
+		transition: all 1s ease;
+		color:white;
+	}
+	.btn-default{
+		position:absolute; 
+		margin-left: -29.2em;
+		width: 140px;
+		height:40px; 
+		background-color:white; 
+		border: none;
+		font-family: bebas-neue;
+		font-size: 1.6em;
+		transition: all 1s ease;
+		-moz-box-shadow: 0px 5px 0px #757575;
+		-webkit-box-shadow: 0px 5px 0px #757575;
+		box-shadow: 0px 5px 0px #757575;
+	}
+	.leer{
+		margin-top: 11em;
+
+	}
+	.btn-default:hover{
+		transition: all 1s ease;
+
+		background-color:#6F6F73; 
+	}
+
+	.btn-default:visited{
+		text-decoration:none; 
+		color: white;
+		background-color:#B2B2B7; 
+	}
+	.promocion{
+		width: 100%;
+		height: 430px;
+	}
+	#prom{
+		margin-top:1em;
+	}
+
+
+	button>a:hover{
+		text-decoration: none;
+		color:white; 
+	}
+
+	button>a:visited{
+		text-decoration: none;
+		color:white; 
+	}
+	button>a{
+		text-decoration: none;
+		color: white;
+	}
+	.btn-primary{
+		position: absolute;
+
+
+		width: 97px;
+		height:38px; 
+		background-color:#CA6233; 
+
+		color: white;
+		border: none;
+		font-family: bebas-neue;
+		font-size: 1.6em;
+		-moz-box-shadow: 0px 5px 0px #757575;
+		-webkit-box-shadow: 0px 5px 0px #757575;
+		box-shadow: 0px 5px 0px #757575;
+		transition: all 1s ease ;
+	}
+	.btn-primary:hover{
+		transition: all 1s ease;
+		color: white;
+		/*background-color:#7D4223; */
+		background-color:#B2B2B7; 
+	}
+
+
+
+	article>div>ul>li{
+		margin-top: 21.8em;
+		margin-right: 25.3em;
+		margin-left: -1.7em;
+		list-style: none;
+		
+		font-family: bebas-neue;
+		
+		display: inline-block;
+	}
+	article>div>ul>li:last-child{
+		margin-right: 0em;
+		margin-left: -1em;
+	}
+
+
+
+	.fabricantes{
+		margin-top:34px; 
+		width: 100%;
+		height: 374px;
+		background-color: #5E6069;
+	}
+	.fabricantesDos{
+		margin-top:-15px; 
+		width: 100%;
+		height: 374px;
+		background-color: #5E6069;
+	}
+	.pie{
+
+		width: 100%;
+		height: 200px;
+		background-color: #383B3D;
+
+	}
+	footer>div>ul{
+
+		margin-top: 8em;
+		font-size: 0.9em;
+		font-family:'Roboto',Sans-serif;
+		font-weight:300; 
+		list-style: none;
+	}
+	footer>div>div>ul>li{
+		font-size: 1.7em;
+
+
+		margin-right:4em; 
+		display: inline-block;
+		list-style: none;
+		font-family: bebas-neue;
+	}
+	footer>div>div>ul>li:last-child{
+		margin-right:-1em; 
+	}
+	footer>div>div>ul>li:first-child{
+		margin-left:-0.7em; 
+	}
+
+	footer>div>div>ul>li>a{
+		color:white;
+	}
+
+	footer>div>div>ul>li>a:hover{
+
+		color:#CA6233;
+
+	}
+
+	div.maps{
+
+		width:984px;
+		height: 500px;
+		margin: 0 auto;
+
+	}
+	div.mapsservi{
+
+		width:984px;
+		height: 346px;
+		margin: 0 auto;
+
+	}
+/*////////////nosotros///////*/
+
+		div.mapsserviB{
+
+		width:984px;
+		height: 10px;
+		margin: 0 auto;
+
+	}
+
+	#h1negro{
+		font-size:2em; 
+		color:black;
+		padding-left:0em;
+	}
+	#h2negro{
+		font-size:1.6em; 
+		color:black;
+		padding-left:0em;
+	}
+	article>div.datos{
+		position: relative;
+		width:984px;
+		height:250px;
+		margin: 0 auto;
+		margin-top: 8em;
+		padding-left:0em; 
+	}
+	.phone {
+		border:none;
+		background: url('imagenes/contacto/iconos-06.png')
+		no-repeat 0 0;
+		width: 43px;
+		height: 44px;
+	}
+	.location {
+		background: url('imagenes/contacto/iconos-06.png') 
+		no-repeat 0 -51px;
+		width: 43px;
+		height: 43px;
+	}
+	.atencion {
+		background: url('imagenes/contacto/iconos-06.png')
+		no-repeat 0 -102px;
+		width: 43px;
+		height: 44px;
+	}
+	.mail {
+		background: url('imagenes/contacto/iconos-06.png')
+		no-repeat 0 -159px;
+		width: 43px;
+		height: 44px;
+	}
+	.social {
+		background: url('imagenes/contacto/iconos-06.png')
+		no-repeat 0 -213px;
+		width: 43px;
+		height: 43px;
+	}
+	ul.listaDato{
+		padding-left:0em; 
+		margin-top:-1.8em; 
+		color:#5B5B5F;
+		font-family:'Roboto';
+		font-weight:300; 
+		font-size:1.4em;
+		list-style: none;
+		text-decoration: none;
+	}
+	.datosContacto{
+		margin-bottom: 11em;
+	}
+	ul.listaDato>li>ul{
+		margin-top: -3em;
+		margin-left: 0.2em;
+		list-style: none;
+		text-decoration: none;
+	}
+
+
+	div.tituloform{
+		width:984px;
+		margin: 0 auto;
+	}
+	div.formulario{
+		display:list-item;
+		width:984px;
+		height: 330px;
+		margin: 0 auto;
+
+	}
+	#contact_form{
+		margin-top: 7em;
+	}
+	.pieContact{
+		margin-top:2em;
+	}
+
+
+
+/*----------------Productos--------------------------------------*/
+
+
+	.boton{
+		background-color: #555555;
+		background: -moz-linear-gradient(top, #555555 , #444444);
+		background: -webkit-gradient(linear, 0 0, 0 100%, from(#555555),  to(#444444));
+		border-radius: 5px;
+		color: #fff;
+		cursor: pointer;
+		margin: 0 auto;
+		padding: 10px;
+		text-align: center;
+		width: 80px;
+	}
+	.seleccionado{
+
+		-webkit-box-shadow: 1px 1px 2px rgba(255,255,255,0.7), inset 1px 1px 4px black;
+		-moz-box-shadow: 1px 1px 2px rgba(255,255,255,0.7), inset 1px 1px 4px black;
+		-o-box-shadow: 1px 1px 2px rgba(255,255,255,0.7), inset 1px 1px 4px black;
+		box-shadow: 1px 1px 2px rgba(255,255,255,0.7), inset 1px 1px 4px black;
+
+		background: -moz-linear-gradient(top, #333333 , #555555);
+		background: -webkit-gradient(linear, 0 0, 0 100%, from(#333333),  to(#555555));
+	}
+	.arrow_box {
+		margin-top: -10px;
+		position: relative;
+		background: red;
+	}
+	.arrow_box:after {
+		bottom: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.arrow_box:after {
+		border-bottom-color: white;
+		border-width: 5px;
+		left: 50%;
+		margin-left: -5px;
+
+	}
+	.boton .info{
+		background-color: white;
+		box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+		color: black;
+		display: none;
+		margin-left: -60px;
+		margin-top: 20px;
+		position: absolute;
+		width: 200px;
+		text-align: left;
+	}
+	.boton .info .content{
+		padding: 10px;
+	}
+	.boton .info .content .titulo{
+		border-bottom: solid 1px #ccc;
+		font-weight: bold;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	.boton .info .content ul{
+		padding: 0;
+	}
+	.boton .info .content ul li{
+		list-style: none;
+		padding: 10px;
+	}
+	.boton .info .content ul li:hover{
+		background: #eee;
+	}
+	.boton .info .content ul li a{
+		color: #555;
+		padding: 10px 70px 10px 10px;
+		text-decoration: none;
+	}
+	.boton .info .content ul li a:hover{
+		color: black;
+		text-decoration: none;
+	}
+
+	#filtros{
+
+		width: 984px;
+		height: 135px;
+		margin: 0 auto;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		color:white;
+
+	}
+
+	#filtros>h2{
+		position: relative;
+		margin-top: 0px;
+		color: #383b3d;
+		margin: 5px 0 28px 0;
+	}
+
+	#filtros>h3{
+		font-family: Roboto;
+		position: relative;
+		margin-top: 0px;
+		color: #383b3d;
+		font-size: 18px;
+	}
+
+	#filtros>div>.btn-group{
+
+		margin-right: 15px;
+	}
+
+
+	#imagenesProductos{
+
+height: 960px;
+background-color: #484b4c; 
+padding-top: 58px;
+
+	}
+
+#filtros>div .btn-default{
+		background-color: #c3c3c3;
+	
+	}
+
+	.contenedorImagenes{
+		position: relative;
+		width: 964px;
+		height: 840px;
+		margin: 0 auto;
+		text-align: center;
+		background-color: gray;
+	}
+	.imagenProducto{
+
+		position: relative;
+		width: 308px;
+		height: 254px;
+		background-color: green;
+	}
+
+.contenedorImagenes>h1{
+color: darkgray;
+position: relative;
+}
+
+.contenedorImagenes>ul{
+	position: absolute;
+	display: table;
+	padding: 0;
+	width: 100%;
+}
+
+.contenedorImagenes>ul li{
+position: relative;
+display: table-cell;
+
+}
+
+.contenedorImagenes>ul li a{
+	position: relative;
+
+
+}
+
+.container{
+
+background: #F3F3F3;
+padding: 15px;
+border:  1px solid lightgray;
+margin-top:  20px;
+
+}
+
+.mix{
+display: none;
+padding: 5px;
+width: auto;
+background-color: rgba(0,0,0,0.5);
+border-radius: 4px;
+margin-bottom: 10px;
+}
+.mix>a{
+
+	display: block;
+}
+
+div>span{
+
+	color: white;
+}
+
+.mix>a>img:hover{
+-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+-webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+
+}
+
+
+
+
+
+/*/////////////Nosotros/////////////////*/
+
+#nosotrosTitulo {
+		position:relative;
+		margin-top:83px; 
+		width: 100%;
+		height: 500px;
+	}
+		#mision {
+		position:relative;
+		margin-top:33px; 
+		width: 100%;
+		height: 415px;
+		background-color: #383B3D;
+	}
+	#vision {
+		position:relative;
+		margin-top:0px; 
+		width: 100%;
+		height: 385px;
+
+	}
+
+	#enfoque {
+		position:relative;
+		margin-top:0px; 
+		width: 100%;
+		height: 194px;
+		background-color: #383B3D;
+	}
+
+#caidaEnfoque{
+		margin-top:1.5em;
+	}
+
+	.expander {
+ position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 164px;
+    height: 41px;   
+    background-image: url("source/botonMercadolibre.png");
+    z-index: 99999;   
+    cursor: pointer;
+}
+
+.fancybox-title-over-wrap {
+    width: 100%;
+    padding: 0;
+    background-color: rgba(100, 100, 10, .5);  
+}
+
+.fancybox-title-over-wrap > div {
+    padding: 10px;
+    padding-right: 225px;
+    font-size: 18px;
+}

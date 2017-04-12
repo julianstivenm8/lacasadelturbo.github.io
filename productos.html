@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Productos</title>
+	<!-- /////////////hoja cascada bootstrap y styles /////////////////////-->
+
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- /////////////fuentes /////////////////////-->
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+	<script src="http://use.edgefonts.net/bebas-neue.js"></script>
+
+	<!-- /////////////bootsttrap y jquery /////////////////////-->
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- /////////////mixitup /////////////////////-->
+
+
+	<script src="js/jquery.mixitup.min.js"></script>
+
+
+	<script >
+		$(document).on('click', function(){
+
+			$('#container').mixItUp();
+		})
+	</script>
+
+	<!-- /////////////fancyBox /////////////////////-->
+
+	<!-- Add jQuery library -->
+	
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {					
+
+			$(".fancybox").fancybox({
+				openEffect: 'none',
+				closeEffect: 'none',
+				afterShow: function() { 
+
+					$('<a href="http://www.mercadolibre.com.co/" target="_blank"><div class="expander"></div></a>').appendTo(this.inner).click(function() {
+						$(document).toggleFullScreen();						
+					});
+
+ $(".fancybox-title").wrapInner('<div />').show();
+        
+        $(".fancybox-wrap").hover(function() {
+            $(".fancybox-title").show();
+        },function() {
+            $(".fancybox-title").hide();
+        });
+
+				}, helpers : {
+        title: {
+            type: 'over'
+        }
+    }
+			});
+
+
+		});
+	</script>
+
+	
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+
+	<!-- /////////////Fin del fancyBox /////////////////////-->
+
+</head>
+<body id= "productos" >
+
+	<header>		
+		<nav >
+			<div class="row" >
+				<div class="col-xs-12 col-sm-6 col-md-3 " id="logo">
+					<a href="pointer" ><img src="imagenes/home/logo.png"></a> 
+				</div>
+				<div id="nav">
+					<ul class="col-xs-1 col-sm-7 col-md-7" style="padding:0;" id="navegacion">
+
+						<li> <a href="index.html" class="uno">Inicio </a></li>
+
+						<li><a href="productos.html" class="dos">Productos 
+						</a></li>
+
+						<li><a href="servicios.html" class="tres">Servicios </a></li>
+
+						<li><a href="contacto.html" class="cuatro"> Contacto  </a></li>
+
+						<li> <a href="nosotros.html" class="cinco" > Nosotros </a> </li>
+
+
+					</ul>
+				</div>
+				
+
+			</div>
+		</nav>
+
+	</header>
+
+	
+	<section >
+
+		<!--//////////////////Botones de los filtros/////////////////-->
+		<div id="filtros" >
+			<h3>Viendo Actualmente</h3>
+			<h2> <em> Todos los productos</em></h2>
+			<!--para posicionar los botones de los filtros-->
+			<div class="botonesFiltros">
+				<div class="btn-group" >
+					<button type="button" class="btn btn-default dropdown-toggle"
+					data-toggle="dropdown">
+					Sistemas <span class="caret"></span>
+				</button> 
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#" class="filter" data-filter="all">Todo</a></li>
+					<li class="divider"></li>
+					<li><a href="#" class="filter" data-filter=".turbo">Turbos</a></li>
+					<li><a href="#" class="filter"  data-filter=".bombasInyeccion">Bombas de inyección</a></li>
+					<li><a href="#" class="filter"  data-filter=".inyector">Inyectores</a></li>
+					<li><a href="#" class="filter"  data-filter=".rail">Common rail</a></li>
+				</ul>
+			</div>
+
+
+			<div class="btn-group" >
+				<button type="button" class="btn btn-default dropdown-toggle"
+				data-toggle="dropdown">
+				Item <span class="caret"></span>
+			</button> 
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#" class="filter" data-filter="all">Todo</a></li>
+				<li class="divider"></li>
+				<li><a href="#" class="filter" data-filter=".turboCompleto">Turbos completos</a></li>
+				<li><a href="#" class="filter"  data-filter=".cartridge">Cartridge</a></li>
+				<li><a href="#" class="filter"  data-filter=".empaquetadura">Empaquetadura</a></li>
+				<li><a href="#" class="filter"  data-filter=".lineal">Lineal</a></li>
+				<li><a href="#" class="filter"  data-filter=".rotacion">Rotación</a></li>
+				<li><a href="#" class="filter"  data-filter=".cav">Cav</a></li>
+				<li><a href="#" class="filter"  data-filter=".cobec">Cobec</a></li>
+				<li><a href="#" class="filter"  data-filter=".vp44">VP44</a></li>
+				<li><a href="#" class="filter"  data-filter=".mecanico">Mecanico</a></li>
+				<li><a href="#" class="filter"  data-filter=".heui">Heui</a></li>
+				<li><a href="#" class="filter"  data-filter=".eui">Eui</a></li>
+			</ul>
+		</div>
+
+
+		<div class="btn-group" >
+			<button type="button" class="btn btn-default dropdown-toggle"
+			data-toggle="dropdown">
+			Fabricante <span class="caret"></span>
+		</button> 
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="#" class="filter" data-filter="all">Todo</a></li>
+			<li class="divider"></li>
+			<li><a href="#" class="filter" data-filter=".garret">Garret</a></li>
+			<li><a href="#" class="filter"  data-filter=".cat">Cat</a></li>
+			<li><a href="#" class="filter"  data-filter=".zeky">Zeky Turbo</a></li>
+			<li><a href="#" class="filter"  data-filter=".switzer">Switzer</a></li>
+			<li><a href="#" class="filter"  data-filter=".borgewarner">Borgwarner</a></li>
+			<li><a href="#" class="filter"  data-filter=".holset">Holset</a></li>
+			<li><a href="#" class="filter"  data-filter=".mitsubishi">Mitsubishi</a></li>
+			<li><a href="#" class="filter"  data-filter=".ihi">IHI Turbo Charger</a></li>
+			<li><a href="#" class="filter"  data-filter=".bosch">Bosch</a></li>
+			<li><a href="#" class="filter"  data-filter=".denso">Denso</a></li>
+			<li><a href="#" class="filter"  data-filter=".delphi">Delphi</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+</section>
+
+
+<!--//////////////////////Imagenes de los productos/////////////////////-->
+<section>
+	<!-- ///////////////Espacio de la galeria de imagenes////////////////// -->
+
+
+	<div class="contenedorImagenes">
+		<div id="container">	
+			<div class="mix turbo cartridge borgewarner">
+				<a class="fancybox" href="imagenes/productos/agrale_2008B.png" rel="gallery1" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="imagenes/productos/agrale_2008S.png" alt="" /></a>
+				<span>Agrale 2008</span>
+			</div>
+			<div class="mix turbo cartridge switzer">
+				<a class="fancybox" href="imagenes/productos/kodiak_31_16B.png" rel="gallery2" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="imagenes/productos/kodiak_31_16S.png" alt="" /></a>
+				<span>Kodiak 31 16</span>
+			</div>	
+			<div class="mix turbo cartridge garret">
+				<a class="fancybox" href="imagenes/productos/npr_2000_isuzuB.png" rel="gallery3" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="imagenes/productos/npr_2000_isuzuS.png" alt="" /></a>
+				<span>NPR 2000 Isuzu</span>
+			</div>
+			<div class="mix turbo cartridge garret">
+				<a class="fancybox" href="imagenes/productos/renault_masterB.png" rel="gallery4" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="imagenes/productos/renault_masterS.png" alt="" /></a>
+				<span>Renault Master</span>
+			</div>
+			<div class="mix turbo cartridge zeky">
+				<a class="fancybox" href="imagenes/productos/t04_e13_international_360B.png" rel="gallery5" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="imagenes/productos/t04_e13_international_360S.png" alt="" /></a>
+				<span>T04 International</span>
+			</div>
+
+			<!-- ///////////////Espacio de la galeria de imagenes OCULTAS PARA LA PREVISUALIZACION////////////////// -->
+			<div class="hidden">
+				<a class="fancybox" href="imagenes/productos/agrale_2008B2.png" rel="gallery1" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="" alt="" /></a>
+				<span>T04 International</span>
+			</div>
+			<div class="hidden">
+				<a class="fancybox" href="imagenes/productos/kodiak_31_16B2.png" rel="gallery2" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="" alt="" /></a>
+				<span>T04 International</span>
+			</div>
+			<div class="hidden">
+				<a class="fancybox" href="imagenes/productos/npr_2000_isuzuB2.png" rel="gallery3" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="" alt="" /></a>
+				<span>T04 International</span>
+			</div>
+			<div class="hidden">
+				<a class="fancybox" href="imagenes/productos/renault_masterB2.png" rel="gallery4" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="" alt="" /></a>
+				<span>T04 International</span>
+			</div>
+			<div class="hidden">
+				<a class="fancybox" href="imagenes/productos/t04_e13_international_360B2.png" rel="gallery5" title="Podemos diseñar el embalaje a sus requisitos pero tener más cantidad2 Si necesita paletas de madera, De la atención al cliente necesita pagar el para la plataforma de madera cargos3 Si requisitos, Ofrecemos la corrugado caja de cartón y papel vitela observación4 El precio ofrecemos es el precio de fábrica5 Podemos ayudarle a entrega la mercancía , mientras que usted requisito6 Y el honorario del shippment se en su cuenta7 Podemos sólo de liberación rápida la mercancía después de que el pago de la productos se por. Gracias"><img src="" alt="" /></a>
+				<span>T04 International</span>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+<!--//////////////////////////footer///////////-->
+
+<footer class="pie" style="margin-top:-1em;">
+	<div id="info">
+		<h1>Contáctanos:</h1>
+		<ul class="col-xs-1 col-sm-2 col-md-2" style="padding-left:0px;padding-right:0px;">
+			<li>Cali, Colombia.</li>
+			<li>Dirección: CL 34 # 7-144</li>
+			<li>Tel: 448 85 55- 373 83 30</li>
+		</ul>
+		<div>
+			<ul class="col-xs-2 col-sm-3 col-md-5 col-md-offset-1" style="margin-top:3.5em">
+				<li><a href="servicios.html">Ventas </a>
+				</li>
+				<li><a href="servicios.html">Servicios</a>
+				</li>
+				<li><a href="contacto.html">Contacto</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col-xs-1 col-sm-2 col-md-2 col-md-offset-2" style="padding-left:0px;margin-top:3.5em">
+			<h1 style="margin-top:0em;">Síguenos en:</h1>
+			<a href="https://www.facebook.com/LA-CASA-DEL-TURBO-LTDA-162462707160769/?fref=ts"> <img src="imagenes/home/fb.png" alt=""style="margin-left:3em;margin-top:3em"/></a>
+		</div>
+
+	</div>
+</footer>	
+</body>
+</html>

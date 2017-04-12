@@ -1,0 +1,61 @@
+.sss {
+	height: 0;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+	display: block;
+	overflow: hidden;
+
+}
+
+.ssslide {
+
+	width: 100%;
+    
+	height: 34.5em;
+	/*height: 485px;*/
+
+
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+}
+
+.ssslide img {
+	max-width: 100%;
+	
+	
+	height:100%; 
+	margin: 0;
+	padding: 0;
+	
+	position: relative;
+	display: block;
+}
+
+.sssnext, .sssprev {
+	width: 26px;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	background: url('imagenes/home/arr2.png') no-repeat;
+}
+
+.sssprev {
+	left: 0%;
+	background-position: 0 50%;
+}
+
+.sssnext {
+	right: 0%;
+	background-position: -26px 50%;
+}
+
+.sssprev:hover, .sssnext:hover {
+	cursor: pointer;
+}
